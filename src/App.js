@@ -1,3 +1,4 @@
+import AboutMe from "./components/AboutMe";
 import NavBar from "./components/NavBar"
 import Showcase from "./components/Showcase";
 
@@ -6,6 +7,7 @@ function App() {
     <div>
       <NavBar/>
       <Showcase/>
+      <AboutMe/>
     </div>
   );  
 }
