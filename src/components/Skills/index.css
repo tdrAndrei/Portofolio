@@ -1,0 +1,24 @@
+.dark-bg {
+    background-color: #212120;
+    width: 100%;
+}
+
+.section-heading{
+    color: #e3b5ff;
+}
+
+.section-heading::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 120px;
+    background-color: #ffffff;
+}
+
+.img-fluid>*{
+    max-height: 150px;
+} 
+
+.container-lg>.row{
+    margin-bottom: 1rem;
+}
