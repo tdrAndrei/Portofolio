@@ -3,22 +3,25 @@
     width: 100%;
 }
 
-.section-heading{
+.heading-color{
     color: #e3b5ff;
 }
 
-.section-heading::after{
+.underline::after{
     content: "";
     display: block;
     height: 1px;
-    width: 120px;
     background-color: #ffffff;
+}
+
+#skills::after{
+    width: 120px;
 }
 
 .img-fluid>*{
     max-height: 150px;
 } 
 
-.container-lg>.row{
-    margin-bottom: 1rem;
+.spacing{
+    margin-top: 5rem;
 }

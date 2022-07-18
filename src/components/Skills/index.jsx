@@ -1,20 +1,26 @@
 import React from 'react'
 import "./index.css"
+import UpperEdge from "./upperEdge.svg"
 import {ReactComponent as SpringIcon} from "./spring-icon.svg"
 import {ReactComponent as JavaIcon} from "./java-icon.svg"
+import {ReactComponent as GitIcon} from "./git-icon.svg"
+import {ReactComponent as GithubIcon} from "./github.svg"
+import {ReactComponent as ReactIcon} from "./reactjs-icon.svg"
+import {ReactComponent as NodeIcon} from "./nodejs-icon.svg"
+import {ReactComponent as CppIcon} from "./cpp-icon.svg"
+import {ReactComponent as GoIcon} from "./go-icon.svg"
+import {ReactComponent as PythonIcon} from "./python-icon.svg"
+import {ReactComponent as PostgreIcon} from "./postgre-icon.svg"
 
 function Skills() {
   return (
-    <section id="skillSection">
-        <svg  viewBox="0 0 1440 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1063.5 52.5L1439.5 13.5V105.5H0V0L1063.5 52.5Z" fill="#212120"/>
-        </svg>
-        
+    <section id="skillSection no-padding">
+        <img className='img-fluid w-100' src={UpperEdge}></img>
         <div className='dark-bg text-light p-sm-5'>
           <div className='container-lg'>
             <div className='row'>
               <div className='col-12 d-flex justify-content-sm-start justify-content-center'>
-                <h2 className='section-heading'>My skills</h2>
+                <h2 className='heading-color underline' id="skills">My skills</h2>
               </div>
             </div>
 
@@ -36,6 +42,67 @@ function Skills() {
               </div>
             </div>
 
+            <div className="row spacing">
+              <div className="col-sm-12">
+                
+                <div className="row">
+                  <div className="col-sm-12 d-flex justify-content-center">
+                    <h2 id="vsc" className='heading-color'>Version control</h2>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-sm-4 d-flex flex-column align-items-center">
+                    <GitIcon/>
+                    <GithubIcon/>
+                  </div>
+                  <div className="col-sm-5 d-flex align-items-center">
+                    <p>Git is the most popular VCS and I have used it in almost all my projects. The professional look and feel of Github makes it my favourite platform for repositorites.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row spacing">
+              <div className="col-sm-12">
+                <div className="row justify-content-center">
+                <div className="col-sm-12 d-flex justify-content-center">
+                    <h2 id="js" className='heading-color'>JavaScript Ecosystem</h2>
+                  </div>
+                </div>
+                <div className="row justify-content-center mt-3">
+                  <div className="col-sm-6 d-flex justify-content-between align-items-center">
+                    <ReactIcon/>
+                    <NodeIcon/>
+                  </div>
+                </div>
+
+                <div className="row justify-content-center mt-3">
+                  <div className="col-sm-6 d-flex justify-content-center">
+                    <p>I have used node.js for the back-end in most of my javascript projects. React is my framework of choice when it comes to building an interactive UI.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row spacing">
+              <div className="col-sm-12">
+                <div className="row">
+                  <div className="col-sm-12 d-flex justify-content-center">
+                    <h2 className='heading-color'>Other technologies that I've used</h2>
+                  </div>
+                </div>
+
+                <div className="row mt-5">
+                  <div className="col-sm-12 d-flex justify-content-around align-items-center">
+                    <CppIcon/>
+                    <GoIcon/>
+                    <PythonIcon/>
+                    <PostgreIcon/>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     
