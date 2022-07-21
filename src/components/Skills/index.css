@@ -1,3 +1,7 @@
+#skillSection{
+    width: 100%;
+}
+
 .dark-bg {
     background-color: #212120;
     width: 100%;
@@ -25,3 +29,39 @@
 .spacing{
     margin-top: 5rem;
 }
+
+#upperEdge{
+    position: relative;
+    top: 1.5px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+    #skillSection p {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 592px) {
+    #lowerEdge{
+        position: relative;
+        width: 100%;
+        bottom: 3px;
+    }
+
+    .techIcons{
+        max-width: 80px;
+    }
+
+    .otherIcons{
+        max-width: 8rem;
+    }
+
+    .w-sm-50{
+        width: 50%;
+    }
+
+    #skillSection p {
+        font-size: 1.2rem;
+    }
+  }
