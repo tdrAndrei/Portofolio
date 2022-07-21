@@ -9,7 +9,7 @@ function NavBar() {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navmenu">
-                <ul className="navbar-nav ml-auto">
+                <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
                         <a href="#AboutMe" className="nav-link">About me</a>
                     </li>
