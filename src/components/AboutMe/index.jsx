@@ -3,7 +3,7 @@ import './index.css'
 
 function AboutMe() {
   return (
-    <section className='p-sm-5 py-3'>
+    <section id="AboutMe" className='p-sm-5 py-3'>
         <div className="container-lg">
             <div className="row">
                 <div className='col-12'>

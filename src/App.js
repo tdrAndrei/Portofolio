@@ -1,6 +1,7 @@
 import AboutMe from "./components/AboutMe";
 import NavBar from "./components/NavBar"
 import Showcase from "./components/Showcase";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavBar/>
       <Showcase/>
       <AboutMe/>
+      <Skills/>
     </div>
   );  
 }
