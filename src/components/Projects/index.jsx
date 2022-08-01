@@ -1,65 +1,36 @@
 import React from 'react'
 import "./index.css"
+import ProjectCard from './project_card'
 import test1 from "./connect4.jpg"
 import test2 from "./quiz.jpg"
 import test3 from "./test3.jpg"
 
 function Projects() {
-  return (
-    <section id="Projects" className='w-100 p-5'>
-        <div className='container-lg'>
-            <div className="row">
-                <div className="col-sm-12">
-                    <div className='d-flex justify-content-sm-start justify-content-center'>
-                        <h3 className='title'>My Projects</h3>
-                    </div>
-                </div>
+
+    const card1 = {
+        title: "Connect4",
+        description: "In this project I've built a 2-player online game of connect 4 in the browser using javascript and css. This was my first serious attempt at creating a game and it taught me a lot about making a layout for the user interface in css and js."
+    }
+
+    const card2 = {
+        title: "Graph vizualizer",
+        description: "This was my frist project working with external libraries. I built this app as a tool to visualize graphs and certain properties useful in computer science and more specifically competitive programming."
+    }
+
+    const card3 = {
+        title: "Quizzzz",
+        description: "Quizzzz is a game I've made together with 5 classmates as part of a group project. Developing this app introduced me to java's back-end framework Spring and taught me import design patterns in software engineering."
+    }
+
+    return (
+        <section id="Projects" className='w-100 p-5'>
+            <div id="cardGrid" className="container-lg d-flex flex-column justify-content-center">
+                <ProjectCard text={card1} source={test1}></ProjectCard>
+                <ProjectCard text={card2} source={test2}></ProjectCard>
+                <ProjectCard text={card3} source={test3}></ProjectCard>
             </div>
-            <div className="row mt-5">
-                <div className="col-sm-12 carouselBox">
-                    <div id="projectCarousel" className="carousel slide border" data-bs-ride="carousel">
-                        <div className="carousel-indicators">
-                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <img src={test1} className="d-block img-fluid w-100 h-100" alt="..."/>
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h5 className='text-dark'>Connect4 browser game</h5>
-                                    <p className='text-dark'>This is an online two-player game of Connect4 made in browser with javascript, html and css</p>
-                                </div>
-                            </div>
-                            <div className="carousel-item">
-                                <img src={test2} className="d-block img-fluid w-100 h-100" alt="..."/>
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
-                                </div>
-                            </div>
-                            <div className="carousel-item">
-                                <img src={test3} className="d-block img-fluid w-100 h-100" alt="..."/>
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon blue" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-  )
+        </section>
+    )
 }
 
 export default Projects
