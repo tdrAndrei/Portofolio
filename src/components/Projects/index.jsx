@@ -23,12 +23,20 @@ function Projects() {
     }
 
     return (
-        <section id="Projects" className='w-100 p-5'>
-            <div id="cardGrid" className="container-lg d-flex flex-column justify-content-center">
-                <ProjectCard text={card1} source={test1}></ProjectCard>
-                <ProjectCard text={card2} source={test2}></ProjectCard>
-                <ProjectCard text={card3} source={test3}></ProjectCard>
+        <section id="Projects" className='w-100 p-sm-5 p-2'>
+            <div className="container-lg">
+                <div className="row">
+                    <div className="col-12 d-flex justify-content-sm-start justify-content-center">
+                    <h3 className='title'>Projects</h3>
+                    </div>
+                </div>
+                <div id="cardGrid" className="container-lg d-flex flex-column justify-content-center">
+                    <ProjectCard text={card1} source={test1}></ProjectCard>
+                    <ProjectCard text={card2} source={test2}></ProjectCard>
+                    <ProjectCard text={card3} source={test3}></ProjectCard>
+                </div>
             </div>
+            
         </section>
     )
 }
