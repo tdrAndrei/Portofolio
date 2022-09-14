@@ -1,5 +1,5 @@
 #skillSection{
-    width: 100%;
+    width: 100vw;
 }
 
 .dark-bg {
@@ -12,14 +12,16 @@
 }
 
 .underline::after{
+    position: relative;
     content: "";
     display: block;
-    height: 1px;
+    top: 3px;
+    height: 2px;
     background-color: #ffffff;
 }
 
 #skills::after{
-    width: 120px;
+    width: 100%;
 }
 
 .img-fluid>*{
@@ -32,8 +34,8 @@
 
 #upperEdge{
     position: relative;
-    top: 1.5px;
-    width: 100%;
+    top: 0px;
+    width: 100vw;
 }
 
 @media only screen and (min-width: 1200px) {

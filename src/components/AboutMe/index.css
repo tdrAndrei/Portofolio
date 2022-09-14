@@ -1,6 +1,8 @@
 .title::after{
+    position: relative;
     content: "";
-    width: 120px;
+    width: 100%;
+    top: 3px;
     height: 2px;
     background-color: blueviolet;
     display: block;

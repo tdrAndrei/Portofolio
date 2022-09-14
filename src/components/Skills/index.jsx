@@ -15,12 +15,12 @@ import {ReactComponent as PostgreIcon} from "./postgre-icon.svg"
 function Skills() {
   return (
     <section id="skillSection">
-        <img id='upperEdge' src={UpperEdge}></img>
-        <div className='dark-bg text-light p-sm-5'>
+        <img id='upperEdge' className='' src={UpperEdge}></img>
+        <div className='dark-bg text-light p-sm-5 p-3'>
           <div className='container-lg'>
             <div className='row'>
               <div className='col-12 d-flex justify-content-sm-start justify-content-center'>
-                <h2 className='heading-color underline' id="skills">My skills</h2>
+                <h2 className='heading-color underline mb-sm-5' id="skills">My skills</h2>
               </div>
             </div>
 
@@ -28,14 +28,14 @@ function Skills() {
               <div className="col-sm-3 d-flex justify-content-center img-fluid">
                 <JavaIcon/>
               </div>
-              <div className="col-sm-9 d-flex align-items-center justify-content-center text-sm-left text-center mt-3">
+              <div className="col-sm-9 d-flex align-items-center justify-content-center text-sm-start text-center mt-3">
                 <p>My first year at university heavily relied on java. It's an easy language to learn but hard to master. I like to use it for it's versability and robustness.</p>
               </div>
             </div>
 
             <div id="spring" className="row mt-5">
-              <div className="col-sm-9 d-flex align-items-center justify-content-center order-sm-1 order-2 text-sm-left text-center mt-2">
-                <p>Spring is a java framework for building the back-end of an application, which I’ve used in a software project together with my colleagues. It makes Java so much more productive and easy to use. In my opinion it is a great choice for back-end.</p>
+              <div className="col-sm-9 d-flex align-items-center justify-content-center order-sm-1 order-2 text-sm-start text-center mt-2">
+                <p>Spring is a java framework for building the back-end of an application, which I've used in a software project together with my colleagues. It makes Java so much more productive and easy to use. In my opinion it is a great choice for back-end.</p>
               </div>
               <div className="col-sm-3 d-flex justify-content-center img-fluid order-sm-2 order-1">
                 <SpringIcon className='w-sm-50'/>
@@ -55,7 +55,7 @@ function Skills() {
                     <GitIcon/>
                     <GithubIcon className='w-50'/>
                   </div>
-                  <div className="col-sm-5 d-flex align-items-center text-sm-left text-center mt-3">
+                  <div className="col-sm-5 d-flex align-items-center text-sm-start text-center mt-3">
                     <p>Git is the most popular VCS and I have used it in almost all my projects. The professional look and feel of Github makes it my favourite platform for repositorites.
                     </p>
                   </div>
@@ -78,7 +78,7 @@ function Skills() {
                 </div>
 
                 <div className="row justify-content-center mt-3">
-                  <div className="col-lg-6 d-flex justify-content-center text-sm-left text-center">
+                  <div className="col-lg-6 d-flex justify-content-center text-sm-start text-center">
                     <p>I have used node.js for the back-end in most of my javascript projects. React is my framework of choice when it comes to building an interactive UI.</p>
                   </div>
                 </div>
