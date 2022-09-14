@@ -16,11 +16,11 @@ function Skills() {
   return (
     <section id="skillSection">
         <img id='upperEdge' className='' src={UpperEdge}></img>
-        <div className='dark-bg text-light p-sm-5'>
+        <div className='dark-bg text-light p-sm-5 p-3'>
           <div className='container-lg'>
             <div className='row'>
               <div className='col-12 d-flex justify-content-sm-start justify-content-center'>
-                <h2 className='heading-color underline' id="skills">My skills</h2>
+                <h2 className='heading-color underline mb-sm-5' id="skills">My skills</h2>
               </div>
             </div>
 
