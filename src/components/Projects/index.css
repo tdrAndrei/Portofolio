@@ -1,0 +1,19 @@
+.project-card{
+    position: relative;
+    background-color: #9f54cb;
+    border-radius: 0.4rem;
+    max-width: 900px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.289);
+}
+
+.project-card img {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.project-card-text{
+    color: white;
+}
+
+#cardGrid{
+    gap: 20px;
+}
